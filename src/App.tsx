@@ -2,10 +2,51 @@ import { HiBars3BottomLeft } from "react-icons/hi2";
 import { FaQuoteLeft } from "react-icons/fa";
 import Logo from "./assets/logo-header-white.svg";
 import ImageBg from "./assets/main_video_poster.png";
+import ImageBg1 from "./assets/2.jpg";
+import ImageBg2 from "./assets/5.jpg";
 import imgHero from "./assets/008-400EastPalmettoParkRoad-BocaRaton-FL-33432-FULL1-scaled.jpg";
 import secImg from "./assets/012-400EastPalmettoParkRoad-BocaRaton-FL-33432-FULL-scaled.jpg";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 function App() {
+  const slideImage1 = [
+    {
+      url: ImageBg,
+      caption: "slide-1",
+    },
+    {
+      url: ImageBg1,
+      caption: "slide-1",
+    },
+
+    {
+      url: ImageBg2,
+      caption: "slide-3",
+    },
+  ];
+
+  const slideImage2 = [
+    {
+      url: secImg,
+      heading: "WONDERFUL STORE",
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit Nostrum quo dolorem, impedit id laborum debitis itaque placeatnobis illo eveniet dicta corporis obcaecati fuga. Sapiente undedeserunt cum iure tempore.",
+    },
+    {
+      url: ImageBg1,
+      heading: "ONE OF A KIND",
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit Nostrum quo dolorem, impedit id laborum debitis itaque placeatnobis illo eveniet dicta corporis obcaecati fuga. Sapiente undedeserunt cum iure tempore.",
+    },
+
+    {
+      url: ImageBg2,
+      heading: "GREAT IS MORE THAN A WORD",
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit Nostrum quo dolorem, impedit id laborum debitis itaque placeatnobis illo eveniet dicta corporis obcaecati fuga. Sapiente undedeserunt cum iure tempore.",
+    },
+  ];
   return (
     <div>
       <div className="bg-transparent md:bg-gray-300 w-full fixed px-3 py-4 h-28  flex justify-between md:px-24 ">
@@ -17,7 +58,6 @@ function App() {
             <li className="text-white  font-semibold text-lg">PROJECTS</li>
             <li className="text-white  font-semibold text-lg">DESIGN</li>
             <li className="text-white  font-semibold text-lg">SHOWROOM</li>
-            <li className="text-white  font-semibold text-lg">BLOG</li>
             <li className="text-white  font-semibold text-lg">OUR TEAM</li>
           </ul>
         </div>
@@ -32,7 +72,17 @@ function App() {
 
       <div className="relative -z-50">
         <div>
-          <img src={ImageBg} alt="bg_img" className="h-[600px] md:w-screen" />
+          <Slide>
+            {slideImage1.map((slideImage, index) => (
+              <div key={index}>
+                <img
+                  src={slideImage?.url}
+                  alt={slideImage.caption}
+                  className="h-[600px] md:w-screen"
+                />
+              </div>
+            ))}
+          </Slide>
         </div>
         <div className="absolute text-3xl font-medium w-2/3 flex flex-col items-center space-y-4 right-20 top-1/3 md:top-1/2 md:right-36">
           <h2 className="text-center text-white md:text-6xl md:font-serif">
@@ -40,13 +90,13 @@ function App() {
           </h2>
           <div className="md:flex md:space-x-8 md:w-full md:justify-center ">
             <div>
-              <button className="border-2 w-full md:w-1/3 border-gray-800 text-sm text-white px-2 py-2">
+              <button className="border-2 w-full  border-gray-800 text-sm text-white px-2 py-2">
                 INTERIOR DESIGN
               </button>
             </div>
 
             <div>
-              <button className="bg-slate-600 text-sm w-full md:w-1/3 text-white px-4 py-2">
+              <button className="bg-slate-600 text-sm w-full  text-white px-4 py-2">
                 SHOP NOW
               </button>
             </div>
@@ -239,26 +289,30 @@ function App() {
           <h2 className="text-slate-700 text-center text-2xl pb-10 md:text-6xl md:font-sans">
             Testimonials
           </h2>
-          <div className="md:flex md:space-x-8 md:w-5/6 md:mx-auto">
-            <div className="md:w-3/4">
-              <img
-                src={secImg}
-                alt="sec_img"
-                className="w-full size-56 md:size-96 md:w-[600px] md:rounded"
-              />
-            </div>
-            <div className="md:pt-20 md:w-1/2">
-              <FaQuoteLeft className="size-8 mt-3  mx-auto" />
-              <h2 className="text-center font-semibold  italic">
-                WONDERFUL STORE
-              </h2>
-              <p className="mt-3 italic">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Nostrum quo dolorem, impedit id laborum debitis itaque placeat
-                nobis illo eveniet dicta corporis obcaecati fuga. Sapiente unde
-                deserunt cum iure tempore.
-              </p>
-            </div>
+          <div>
+            <Slide>
+              {slideImage2.map((slideImage, index) => (
+                <div
+                  key={index}
+                  className="md:flex md:space-x-8 md:w-5/6 md:mx-auto"
+                >
+                  <div className="md:w-3/4">
+                    <img
+                      src={slideImage.url}
+                      alt="sec_img"
+                      className="w-full size-56 md:size-96 md:w-[600px] md:rounded"
+                    />
+                  </div>
+                  <div className="md:pt-20 md:w-1/2">
+                    <FaQuoteLeft className="size-8 mt-3  mx-auto" />
+                    <h2 className="text-center font-semibold  italic">
+                      {slideImage.heading}
+                    </h2>
+                    <p className="mt-3 italic">{slideImage.details}</p>
+                  </div>
+                </div>
+              ))}
+            </Slide>
           </div>
         </div>
       </div>
