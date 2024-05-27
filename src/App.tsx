@@ -137,10 +137,14 @@ function App() {
 
       <div className="pt-40">
         <div className="text-center">
-          <h2 className="text-black text-xl italic font-serif">
-            Our Latest Completed Projects
-          </h2>
-          <p className="text-6xl  text-slate-900">INTERCOASTAL REMODEL</p>
+          <div className="mx-auto w-2/3">
+            <h2 className="text-black text-xl italic font-serif">
+              Our Latest Completed Projects
+            </h2>
+            <p className="text-3xl font-bold  md:text-6xl  text-slate-900">
+              INTERCOASTAL REMODEL
+            </p>
+          </div>
           <div className="pt-20">
             {" "}
             <div>
