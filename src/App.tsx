@@ -1,6 +1,4 @@
-import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
 import { FaQuoteLeft } from "react-icons/fa";
-import Logo from "./assets/logo-header-white.svg";
 import ImageBg from "./assets/main_video_poster.png";
 import ImageBg1 from "./assets/2.jpg";
 import ImageBg2 from "./assets/5.jpg";
@@ -9,13 +7,9 @@ import secImg from "./assets/012-400EastPalmettoParkRoad-BocaRaton-FL-33432-FULL
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Footer from "./components/ui/Footer";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 import NavBar from "./components/ui/NavBar";
 
 function App() {
-  const [openNav, setOpenNav] = useState(false);
-
   const slideImage1 = [
     {
       url: ImageBg,
