@@ -1,4 +1,4 @@
-import { HiBars3BottomLeft } from "react-icons/hi2";
+import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
 import { FaQuoteLeft } from "react-icons/fa";
 import Logo from "./assets/logo-header-white.svg";
 import ImageBg from "./assets/main_video_poster.png";
@@ -8,8 +8,14 @@ import imgHero from "./assets/008-400EastPalmettoParkRoad-BocaRaton-FL-33432-FUL
 import secImg from "./assets/012-400EastPalmettoParkRoad-BocaRaton-FL-33432-FULL-scaled.jpg";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import Footer from "./components/ui/Footer";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import NavBar from "./components/ui/NavBar";
 
 function App() {
+  const [openNav, setOpenNav] = useState(false);
+
   const slideImage1 = [
     {
       url: ImageBg,
@@ -49,26 +55,7 @@ function App() {
   ];
   return (
     <div>
-      <div className="bg-transparent  md:bg-gradient-to-l md:from-neutral-500 to-[#898864] w-full fixed px-3 py-4 h-20 md:h-28  flex justify-between md:px-24 ">
-        <div className="md:hidden">
-          <HiBars3BottomLeft className="size-8 text-white" />
-        </div>
-        <div className="md:flex hidden mt-8">
-          <ul className="flex justify-around space-x-4">
-            <li className="text-white  font-semibold text-lg">PROJECTS</li>
-            <li className="text-white  font-semibold text-lg">DESIGN</li>
-            <li className="text-white  font-semibold text-lg">SHOWROOM</li>
-            <li className="text-white  font-semibold text-lg">OUR TEAM</li>
-          </ul>
-        </div>
-        <div>
-          <img
-            src={Logo}
-            alt="logo"
-            className="size-40 -mt-14 md:bg-black md:h-20 md:mt-1"
-          />
-        </div>
-      </div>
+      <NavBar />
 
       <div className="relative -z-50">
         <div>
@@ -323,39 +310,7 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-10 bg-black ">
-        <div>
-          <div className="text-center text-white md:px-40">
-            <div className="md:flex md:justify-center md:space-x-20">
-              <img src={Logo} alt="logo" className="size-40 mx-auto" />
-              <div>
-                <h2 className="font-bold text-xl">ARTISTIC ELEMENTS</h2>
-                <p className="text-xs mt-2">400 E.Palmetto Park Rd.,</p>
-                <p className="text-xs mt-1">Boca Raton, FL 33432</p>
-                <p className="text-xs mt-4">+1 6237 7382</p>
-                <p className="text-xs mt-1">info@theartisticel.com</p>
-              </div>
-
-              <div>
-                <h2 className="font-bold text-xl mt-8">SHOWROOM HOURS</h2>
-                <p className="text-xs ">Monday - Friday 10:00 -5:00</p>
-                <p className="text-xs">Saturday - by apppointment</p>
-              </div>
-
-              <div>
-                <h2 className="font-bold text-xl mt-8">ONLINE SHOP</h2>
-                <p className="text-xs ">
-                  Now you can place ordr from our showroom online.
-                </p>
-              </div>
-            </div>
-
-            <button className="bg-gradient-to-l from-neutral-500 to-[#a09e5a] text-white px-3 py-2 mt-20 mb-10">
-              SHOP NOW
-            </button>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
