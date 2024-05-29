@@ -10,7 +10,7 @@ export default function Design() {
       </div>
 
       <div className="pt-40 w-full h-60 bg-[#64642799] relative">
-        <h2 className="text-center text-5xl font-serif absolute bottom-1/3 left-0 right-0 font-thin italic">
+        <h2 className="text-center font-bold text-5xl font-['Nicky_Laatz'] absolute bottom-1/3 left-0 right-0  italic">
           Design
         </h2>
       </div>

@@ -14,15 +14,17 @@ export default function Project() {
         <NavBar />
       </div>
       <div className="pt-40 text-center mx-auto w-2/3">
-        <h2 className="text-5xl text-center italic font-serif">Projects</h2>
-        <ImQuotesLeft className="size-8 mx-auto mt-8" />
-        <p className="italic">
+        <h2 className="text-6xl text-center font-semibold italic font-['Nicky_Laatz']">
+          Projects
+        </h2>
+        <ImQuotesLeft className="size-8 mx-auto mt-8 text-[#B39CAB]" />
+        <p className="italic text-2xl font-semibold font-['Playfair_Display']">
           You love your home. We help make thus love endless.
         </p>
       </div>
 
       <div className="pt-28 ">
-        <h2 className="mx-auto w-2/3 font-semibold text-[#c7b72c] text-center text-3xl mb-8">
+        <h2 className="mx-auto w-2/3  font-['Playfair_Display_SC'] font-medium text-[#B39CAB] text-center text-5xl mb-8">
           INTRACOASTAL REMODEL
         </h2>
         <img src={HeroImg} alt="hero_Img" className="size-80 w-full" />

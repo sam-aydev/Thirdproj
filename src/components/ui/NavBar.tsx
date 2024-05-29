@@ -1,5 +1,5 @@
 import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
-import Logo from "../../assets/logo-header.svg";
+import Logo from "../../assets/logo-header-white.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -7,7 +7,13 @@ export default function NavBar() {
   const [openNav, setOpenNav] = useState(false);
   return (
     <div>
-      <div className="bg-transparent z-50  md:bg-gradient-to-l md:from-neutral-500 to-[#898864] w-full fixed px-3 py-4 h-20 md:h-28  flex justify-between md:px-24 ">
+      <div
+        style={{
+          background:
+            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+        }}
+        className=" z-50  w-full fixed px-3 py-4 h-20 md:h-28  flex justify-between md:px-24 "
+      >
         <div className="md:hidden">
           <HiBars3BottomLeft
             onClick={() => setOpenNav(true)}

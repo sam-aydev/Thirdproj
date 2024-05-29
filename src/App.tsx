@@ -66,7 +66,7 @@ function App() {
           </Slide>
         </div>
         <div className="absolute text-3xl font-medium w-2/3 flex flex-col items-center space-y-4 right-20 top-1/3 md:top-1/2 md:right-36">
-          <h2 className="text-center text-white md:text-6xl md:font-serif">
+          <h2 className="text-center text-black md:text-6xl font-['Playfair_Display_SC']">
             Interior Design & Home Decor
           </h2>
           <div className="md:flex md:space-x-8 md:w-full md:justify-center ">
@@ -85,17 +85,31 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-10 bg-gradient-to-l from-neutral-400 to-[#898864] mt-10 md:w-5/6 md:mx-auto md:px-4">
+      <div
+        style={{
+          background:
+            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+        }}
+        className="pt-10  mt-10 md:w-5/6 md:mx-auto md:px-4"
+      >
         <div className="md:flex md:border-2 md:border-neutral-200 md:p-4">
           <div className="md:w-2/3">
             <img src={imgHero} alt="img_hero" className="h-96 w-full " />
           </div>
-          <div className="bg-gradient-to-l from-neutral-500 to-[#a09e5a] w-full md:bg-none md:text-black">
+          <div
+            style={{
+              background:
+                "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+            }}
+            className=" w-full md:bg-none md:text-black"
+          >
             <div className="w-3/4 mx-auto text-center border-slate-300 border-2 p-4  -mt-4  md:border-none md:text-left">
-              <h2 className="text-black text-2xl italic">
+              <h2 className="text-black font-semibold font-['Nicky_Laatz'] text-2xl italic">
                 Your Creative Partner
               </h2>
-              <h2 className="text-white text-3xl -mt-3 ">WHO WE ARE</h2>
+              <h2 className="text-white font-['Playfair_Display_SC'] text-3xl -mt-3 ">
+                WHO WE ARE
+              </h2>
               <p className="text-white text-left md:text-black md:mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam placeat eum cumque vero asperiores commodi
@@ -120,7 +134,13 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-10 pb-10 bg-gradient-to-l from-neutral-500 to-[#898864] md:mt-36 md:py-10">
+      <div
+        style={{
+          background:
+            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+        }}
+        className="pb-10 pt-10 mt-36 md:py-10"
+      >
         <div className="mx-auto w-2/3">
           <FaQuoteLeft className="size-8 mx-auto" />
           <p className="font-semibold italic mt-2 md:font-serif md:text-xl">
@@ -132,7 +152,13 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-10 bg-slate-100 mt-10 md:w-5/6 md:mx-auto md:px-4 md:bg-transparent ">
+      <div
+        style={{
+          background:
+            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+        }}
+        className="pt-10  mt-10 md:w-5/6 md:mx-auto md:px-4 md:bg-transparent "
+      >
         <div className="md:flex md:p-4 md:flex-row-reverse">
           <div className="md:w-2/3 md:border-2 md:border-slate-200 md:p-4">
             <img
@@ -141,13 +167,19 @@ function App() {
               className="h-96 w-full md:-ml-10"
             />
           </div>
-          <div className="bg-gradient-to-l from-neutral-500 to-[#a09e5a] w-full md:bg-none md:text-black">
+          <div
+            style={{
+              background:
+                "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+            }}
+            className="w-full md:bg-none md:text-black"
+          >
             <div className="w-3/4 mx-auto text-center border-slate-300 border-2 p-4  -mt-4  md:border-none md:text-left">
-              <h2 className="text-black text-2xl italic">
+              <h2 className="text-black font-semibold font-['Nicky_Laatz'] text-2xl italic">
                 Your Creative Partner
               </h2>
-              <h2 className="text-white md:text-[#a09e5a] text-3xl -mt-3 ">
-                INTERIOR DESIGN
+              <h2 className="text-white font-['Playfair_Display_SC'] text-3xl -mt-3 ">
+                WHO WE ARE
               </h2>
               <p className="text-white text-left md:text-black md:mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -191,7 +223,13 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-10 bg-slate-100 mt-10 md:w-5/6 md:mx-auto md:px-4 md:bg-transparent ">
+      <div
+        style={{
+          background:
+            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+        }}
+        className="pt-10  mt-10 md:w-5/6 md:mx-auto md:px-4 md:bg-transparent "
+      >
         <div className="md:flex md:p-4">
           <div className="md:w-2/3 md:border-2 md:border-slate-200 md:p-4">
             <img
@@ -200,13 +238,19 @@ function App() {
               className="h-96 w-full md:-ml-10"
             />
           </div>
-          <div className="bg-[#a09e5a] w-full md:bg-none md:text-black">
+          <div
+            style={{
+              background:
+                "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+            }}
+            className="w-full md:bg-none md:text-black"
+          >
             <div className="w-3/4 mx-auto text-center border-slate-300 border-2 p-4  -mt-4  md:border-none md:text-left">
-              <h2 className="text-black text-2xl italic">
+              <h2 className="text-black font-semibold font-['Nicky_Laatz'] text-2xl italic">
                 Your Creative Partner
               </h2>
-              <h2 className="text-white md:text-[#a09e5a] text-3xl -mt-3 ">
-                INTERIOR DESIGN
+              <h2 className="text-white font-['Playfair_Display_SC'] text-3xl -mt-3 ">
+                WHO WE ARE
               </h2>
               <p className="text-white text-left md:text-black md:mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -227,7 +271,13 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-10 mt-10  md:bg-gradient-to-l md:from-neutral-500 md:to-[#898864] md:mt-36 md:py-10">
+      <div
+        style={{
+          background:
+            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+        }}
+        className="pt-10 mt-10   md:mt-36 md:py-10"
+      >
         <div className="mx-auto w-2/3">
           <FaQuoteLeft className="size-8 mx-auto" />
           <p className="font-semibold italic mt-2 md:font-serif md:text-xl">
@@ -239,18 +289,30 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-10 bg-slate-100 mt-10 md:w-[90%] md:mx-auto md:px-4 md:border-2 md:p-8 md:border-slate-200 md:bg-transparent">
+      <div
+        style={{
+          background:
+            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+        }}
+        className="pt-10 mt-10 md:w-[90%] md:mx-auto md:px-4 md:border-2 md:p-8 md:border-slate-200 md:bg-transparent"
+      >
         <div className="md:flex  md:flex-row-reverse md:p-4">
           <div className="md:w-4/5">
             <img src={imgHero} alt="img_hero" className="h-96 w-full " />
           </div>
-          <div className="bg-gradient-to-l from-neutral-500 to-[#a09e5a] w-full md:bg-none md:text-black">
+          <div
+            style={{
+              background:
+                "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+            }}
+            className="w-full md:bg-none md:text-black"
+          >
             <div className="w-3/4 mx-auto text-center border-slate-300 border-2 p-4  -mt-4  md:border-none md:text-left">
-              <h2 className="text-black text-2xl italic">
+              <h2 className="text-black font-semibold font-['Nicky_Laatz'] text-2xl italic">
                 Your Creative Partner
               </h2>
-              <h2 className="text-white md:text-[#a09e5a] text-3xl -mt-3 ">
-                INTERIOR DESIGN
+              <h2 className="text-white font-['Playfair_Display_SC'] text-3xl -mt-3 ">
+                WHO WE ARE
               </h2>
               <p className="text-white text-left md:text-black md:mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
