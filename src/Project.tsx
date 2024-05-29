@@ -24,7 +24,7 @@ export default function Project() {
       </div>
 
       <div className="pt-28 ">
-        <h2 className="mx-auto w-2/3  font-['Playfair_Display_SC'] font-medium text-[#B39CAB] text-center text-5xl mb-8">
+        <h2 className="mx-auto w-2/3  font-['Playfair_Display_SC'] font-medium text-[#B39CAB] text-center text-4xl mb-8">
           INTRACOASTAL REMODEL
         </h2>
         <img src={HeroImg} alt="hero_Img" className="size-80 w-full" />
