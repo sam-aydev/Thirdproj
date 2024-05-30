@@ -22,14 +22,14 @@ export default function NavBar() {
         </div>
         <div className="md:flex hidden mt-8">
           <ul className="flex justify-around space-x-4">
-            <li className="text-white  font-semibold text-lg">
+            <li className="text-black  font-semibold text-lg">
               <Link to="/project">PROJECTS</Link>
             </li>
-            <li className="text-white  font-semibold text-lg">
+            <li className="text-black  font-semibold text-lg">
               <Link to="/design">DESIGN</Link>
             </li>
-            <li className="text-white  font-semibold text-lg">SHOWROOM</li>
-            <li className="text-white  font-semibold text-lg">OUR TEAM</li>
+            <li className="text-black  font-semibold text-lg">SHOWROOM</li>
+            <li className="text-black  font-semibold text-lg">OUR TEAM</li>
           </ul>
         </div>
         <div>
@@ -45,19 +45,19 @@ export default function NavBar() {
           openNav ? "" : "hidden"
         }`}
       >
-        <div className="fixed h-full z-50   bg-[#5f5711] top-0 w-1/2 left-0 md:hidden">
+        <div className="fixed h-full z-50   bg-white top-0 w-1/2 left-0 md:hidden">
           <HiXMark
             onClick={() => setOpenNav(false)}
-            className="size-8 absolute cursor-pointer left-3 top-5 text-white"
+            className="size-8 absolute cursor-pointer left-3 top-5 text-[#c7b72c]"
           />
           <ul className="pt-20 px-4 text-center">
-            <li className="  cursor-pointer font-medium text-white p-2 hover:bg-[#c7b72c] hover:text-white">
+            <li className="  cursor-pointer font-medium text-black p-2 hover:bg-[#c7b72c] hover:text-white">
               <Link to="/">HOME</Link>
             </li>
-            <li className="  cursor-pointer mt-2 font-medium text-white p-2 hover:bg-[#c7b72c] hover:text-white">
+            <li className="  cursor-pointer mt-2 font-medium text-black p-2 hover:bg-[#c7b72c] hover:text-white">
               <Link to="/design">DESIGN</Link>
             </li>
-            <li className="  cursor-pointer  font-medium text-white p-2 hover:bg-[#c7b72c] hover:text-white ">
+            <li className="  cursor-pointer  font-medium text-black p-2 hover:bg-[#c7b72c] hover:text-white ">
               <Link to="/project">PROJECTS</Link>
             </li>
           </ul>

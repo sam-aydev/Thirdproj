@@ -206,7 +206,7 @@ function App() {
             <h2 className="text-black text-xl italic font-serif">
               Our Latest Completed Projects
             </h2>
-            <p className="text-3xl font-bold  md:text-6xl  text-slate-900">
+            <p className="text-3xl font-medium font-playfairsc   md:text-6xl  text-[#B39CAB]">
               INTERCOASTAL REMODEL
             </p>
           </div>
@@ -223,13 +223,7 @@ function App() {
         </div>
       </div>
 
-      <div
-        style={{
-          background:
-            "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
-        }}
-        className="pt-10  mt-10 md:w-5/6 md:mx-auto md:px-4 md:bg-transparent "
-      >
+      <div className="pt-10  mt-10 md:w-5/6 md:mx-auto md:px-4 bg-transparent ">
         <div className="md:flex md:p-4">
           <div className="md:w-2/3 md:border-2 md:border-slate-200 md:p-4">
             <img
@@ -238,21 +232,15 @@ function App() {
               className="h-96 w-full md:-ml-10"
             />
           </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
-            }}
-            className="w-full md:bg-none md:text-black"
-          >
+          <div className="w-full text-black">
             <div className="w-3/4 mx-auto text-center border-slate-300 border-2 p-4  -mt-4  md:border-none md:text-left">
-              <h2 className="text-black font-semibold font-['Nicky_Laatz'] text-2xl italic">
-                Your Creative Partner
+              <h2 className="text-black font-semibold font-nicky text-2xl italic">
+                High-End Home Decor
               </h2>
-              <h2 className="text-white font-['Playfair_Display_SC'] text-3xl -mt-3 ">
-                WHO WE ARE
+              <h2 className="text-[#B39CAB] font-playfairsc text-3xl -mt-3 ">
+                SHOWROOM
               </h2>
-              <p className="text-white text-left md:text-black md:mt-5">
+              <p className="text-black text-left md:text-black md:mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam placeat eum cumque vero asperiores commodi
                 consectetur deleniti ipsum modi quidem nostrum enim dolore earum
@@ -263,8 +251,17 @@ function App() {
                 Molestias ducimus sunt vitae sit ullam delectus!
               </p>
 
-              <button className="bg-gradient-to-l text-white from-neutral-500 to-[#a09e5a] px-4 py-2  mt-5">
+              <button
+                style={{
+                  background:
+                    "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
+                }}
+                className=" px-4 py-2 text-white mt-5"
+              >
                 GO TO YOUR SHOWROOM
+              </button>
+              <button className=" border-2 border-[#B39CAB] w-2/3 py-2  mt-5">
+                SHOP ONLINE
               </button>
             </div>
           </div>
@@ -276,7 +273,7 @@ function App() {
           background:
             "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
         }}
-        className="pt-10 mt-10   md:mt-36 md:py-10"
+        className="py-10 mt-10   md:mt-36 md:py-10"
       >
         <div className="mx-auto w-2/3">
           <FaQuoteLeft className="size-8 mx-auto" />
