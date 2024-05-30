@@ -65,8 +65,8 @@ function App() {
             ))}
           </Slide>
         </div>
-        <div className="absolute text-3xl font-medium w-2/3 flex flex-col items-center space-y-4 right-20 top-1/3 md:top-1/2 md:right-36">
-          <h2 className="text-center text-black md:text-6xl font-['Playfair_Display_SC']">
+        <div className="absolute text-3xl font-medium w-2/3 flex flex-col items-center space-y-4 right-20 bottom-1 md:top-1/2 md:right-36">
+          <h2 className="text-center text-white text-5xl md:text-6xl font-playfairsc">
             Interior Design & Home Decor
           </h2>
           <div className="md:flex md:space-x-8 md:w-full md:justify-center ">
