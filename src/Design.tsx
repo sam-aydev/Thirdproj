@@ -34,7 +34,7 @@ export default function Design() {
             <img
               src={Logo}
               alt="logo"
-              className="size-40 -mt-14 md:bg-black md:h-20 md:mt-1"
+              className="size-40 -mt-14  md:h-20 md:mt-1"
             />
           </div>
         </div>
@@ -201,27 +201,10 @@ export default function Design() {
         </p>
       </div>
 
-      <div className="mt-20 text-center mx-auto w-2/3">
+      <div className="my-20 text-center mx-auto w-2/3">
         <button className="p-2 border-2 border-[#B39CAB] ">
-          GET CONSULTATION
+          <Link to="/contact">GET CONSULTATION</Link>
         </button>
-
-        <p className="mt-12 font-semibold text-xl w-2/3 mx-auto">
-          INTERIOR DESIGN SERVICES
-        </p>
-        <ul className="list-disc p-6 text-left">
-          <li>Furniture, Accessory & Art Solutions</li>
-          <li className="mt-3">Custom Window, Accessory</li>
-          <li className="mt-3">Accessory & Art Solutions</li>
-          <li className="mt-3">Furniture, Accessory & Art Solutions</li>
-          <li className="mt-3">Space Planning</li>
-        </ul>
-      </div>
-
-      <div className="mt-20">
-        <h2 className="text-center font-semibold p-4 bg-[#B39CAB]">
-          MEET OUR TEAM
-        </h2>
       </div>
 
       <div>

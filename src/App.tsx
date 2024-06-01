@@ -8,6 +8,7 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Footer from "./components/ui/Footer";
 import NavBar from "./components/ui/NavBar";
+import { Link } from "react-router-dom";
 
 function App() {
   const slideImage1 = [
@@ -193,7 +194,7 @@ function App() {
               </p>
 
               <button className="border-2 border-white px-4 py-2 md:border-black md:text-black text-white mt-5">
-                GET CONSULTATION
+                <Link to="/contact"> GET CONSULTATION</Link>
               </button>
             </div>
           </div>
